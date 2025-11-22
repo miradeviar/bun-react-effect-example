@@ -1,7 +1,7 @@
 {
   "name": "bun-react-effect-example",
   "version": "0.1.0",
-  "description": "Bun example demonstrating integration with React and Effect",
+  "description": "The bun init React + shadcn/ui starter, made 100% type-safe with Effect TypeScript for end-to-end type safety",
   "private": true,
   "type": "module",
   "keywords": [

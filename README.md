@@ -2,10 +2,12 @@
 
 ![Bun + React + Effect Example - Full-stack application showcasing end-to-end type safety with Effect TypeScript, React 19, and Bun runtime](src/promo.png)
 
-Full-stack application demonstrating **END-TO-END TYPE SAFETY** with Effect TypeScript, React, and Bun.
+**The `bun init` React + shadcn/ui starter, made 100% type-safe with Effect TypeScript.**
+
+This demonstrates **END-TO-END TYPE SAFETY** using Effect for runtime validation, typed error channels, and exhaustive pattern matching. Built with Bun runtime, React 19, Tailwind CSS v4, and shadcn/ui for reusable components.
 
 > [!IMPORTANT]
-> This example showcases zero runtime type errors through Effect's typed error channels, Schema validation, and exhaustive pattern matching.
+> Zero runtime type errors guaranteed through Effect's typed error channels, Schema validation, and compile-time exhaustive error handling.
 
 ## Stack
 
